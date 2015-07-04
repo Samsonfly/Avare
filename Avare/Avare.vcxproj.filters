@@ -68,6 +68,9 @@
     <PRIResource Include="Strings\en-US\Resources.resw">
       <Filter>Strings\en-US</Filter>
     </PRIResource>
+    <Filter Include="gps">
+      <UniqueIdentifier>{089e520c-e66c-4b55-9540-beef5597859e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
@@ -77,12 +80,30 @@
     <ClCompile Include="ItemPage.xaml.cpp" />
     <ClCompile Include="PivotPage.xaml.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="GpsInterface.cpp">
+      <Filter>gps</Filter>
+    </ClCompile>
+    <ClCompile Include="GpsParams.cpp">
+      <Filter>gps</Filter>
+    </ClCompile>
+    <ClCompile Include="Gps.cpp">
+      <Filter>gps</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h" />
     <ClInclude Include="ItemPage.xaml.h" />
     <ClInclude Include="PivotPage.xaml.h" />
+    <ClInclude Include="GpsInterface.h">
+      <Filter>gps</Filter>
+    </ClInclude>
+    <ClInclude Include="GpsParams.h">
+      <Filter>gps</Filter>
+    </ClInclude>
+    <ClInclude Include="Gps.h">
+      <Filter>gps</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest" />

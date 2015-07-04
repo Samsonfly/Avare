@@ -12,8 +12,8 @@ namespace Windows {
     namespace UI {
         namespace Xaml {
             namespace Controls {
-                ref class Pivot;
                 ref class AppBarButton;
+                ref class Pivot;
             }
         }
     }
@@ -31,10 +31,10 @@ namespace Avare
     private:
         bool _contentLoaded;
     
-        private: ::Windows::UI::Xaml::Controls::Pivot^ pivot;
-        private: ::Windows::UI::Xaml::Controls::AppBarButton^ AddAppBarButton;
         private: ::Windows::UI::Xaml::Controls::AppBarButton^ SecondaryButton1;
         private: ::Windows::UI::Xaml::Controls::AppBarButton^ SecondaryButton2;
+        private: ::Windows::UI::Xaml::Controls::AppBarButton^ AddAppBarButton;
+        private: ::Windows::UI::Xaml::Controls::Pivot^ pivot;
     };
 }
 

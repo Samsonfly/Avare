@@ -68,6 +68,8 @@
   <PropertyGroup Label="UserMacros">
     <NuGetPackageImportStamp>852a4979</NuGetPackageImportStamp>
     <ApplicationInsightsResourceId>/subscriptions/1481cb09-10c6-4cce-9c2f-8195a8294707/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/Avare</ApplicationInsightsResourceId>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>arm</AppxBundlePlatforms>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
@@ -94,6 +96,9 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Gps.h" />
+    <ClInclude Include="GpsInterface.h" />
+    <ClInclude Include="GpsParams.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Common\NavigationHelper.h" />
     <ClInclude Include="Common\RelayCommand.h" />
@@ -143,6 +148,9 @@
     <ClCompile Include="App.xaml.cpp">
       <DependentUpon>App.xaml</DependentUpon>
     </ClCompile>
+    <ClCompile Include="Gps.cpp" />
+    <ClCompile Include="GpsInterface.cpp" />
+    <ClCompile Include="GpsParams.cpp" />
     <ClCompile Include="ItemPage.xaml.cpp">
       <DependentUpon>ItemPage.xaml</DependentUpon>
     </ClCompile>
