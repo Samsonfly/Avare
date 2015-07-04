@@ -9,13 +9,12 @@ Redistribution and use in source and binary forms, with or without modification,
 */
 
 //
-// PivotPage.xaml.h
+// GpsInterface.h
 // Declaration of the GpsInterface class.
 // Author: Salem Gbian
 //
 
 #pragma once
-#using <System.dll>
 
 using namespace Windows::Devices::Geolocation;
 
@@ -30,12 +29,12 @@ public:
 
 	virtual ~GpsInterface();
 
-	virtual	void statusCallback(System.GPS.Status GpsStatus gpsStatus);
+	virtual	void statusCallback(ref class Geocoordinate sealed) = 0;
 
-	virtual void locationCallback(Location location);
+	virtual void locationCallback(ref class Geolocator sealed) = 0;
 
-	virtual void timeoutCallback(boolean timeout);
+	virtual void timeoutCallback(boolean timeout) = 0;
 
-	virtual void enabledCallback(boolean enabled);
+	virtual void enabledCallback(boolean enabled) = 0;
 
 };

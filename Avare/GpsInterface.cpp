@@ -1,5 +1,5 @@
 //
-// PivotPage.xaml.h
+// GpsInterface.cpp
 // Implementation of the GpsInterface class.
 //
 
