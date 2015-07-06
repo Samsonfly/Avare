@@ -149,7 +149,6 @@
       <DependentUpon>App.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="Gps.cpp" />
-    <ClCompile Include="GpsInterface.cpp" />
     <ClCompile Include="GpsParams.cpp" />
     <ClCompile Include="ItemPage.xaml.cpp">
       <DependentUpon>ItemPage.xaml</DependentUpon>

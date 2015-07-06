@@ -25,7 +25,7 @@
                 <AppBarButton x:Uid="SecondaryButton1" x:Name="SecondaryButton1" Label="secondary command 1" />
                 <AppBarButton x:Uid="SecondaryButton2" x:Name="SecondaryButton2" Label="secondary command 2" />
             </CommandBar.SecondaryCommands>
-            <AppBarButton x:Uid="AddAppBarButton" x:Name="AddAppBarButton" Label="add" Icon="Add" Click="AddAppBarButton_Click" />
+            <AppBarButton x:ConnectionId='1' x:Uid="AddAppBarButton" x:Name="AddAppBarButton" Label="add" Icon="Add"                               />
         </CommandBar>
     </Page.BottomAppBar>
 
@@ -40,10 +40,10 @@
 				d:DataContext="{Binding Groups[0], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
 				CommonNavigationTransitionInfo.IsStaggerElement="True">
                 <!--Double line list with text wrapping-->
-                <ListView
+                <ListView x:ConnectionId='10'
 					ItemsSource="{Binding Items}"
 					IsItemClickEnabled="True"
-					ItemClick="ItemView_ItemClick"
+					                              
 					ContinuumNavigationTransitionInfo.ExitElementContainer="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
@@ -76,11 +76,11 @@
 				DataContext="{Binding SecondGroup}"
 				d:DataContext="{Binding Groups[1], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}">
                 <!--Double line list no text wrapping-->
-                <ListView
+                <ListView x:ConnectionId='9'
 					ItemsSource="{Binding Items}"
 					IsItemClickEnabled="True"
-					ItemClick="ItemView_ItemClick"
-					Loaded="SecondPivot_Loaded"
+					                              
+					                           
 					ContinuumNavigationTransitionInfo.ExitElementContainer="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
@@ -120,11 +120,11 @@
 				DataContext="{Binding SecondGroup}"
 				d:DataContext="{Binding Groups[1], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}">
                 <!--Double line list no text wrapping-->
-                <ListView
+                <ListView x:ConnectionId='8'
 					ItemsSource="{Binding Items}"
 					IsItemClickEnabled="True"
-					ItemClick="ItemView_ItemClick"
-					Loaded="SecondPivot_Loaded"
+					                              
+					                           
 					ContinuumNavigationTransitionInfo.ExitElementContainer="True">
                     <ListView.ItemTemplate>
                         <DataTemplate/>
@@ -140,11 +140,11 @@
 				DataContext="{Binding SecondGroup}"
 				d:DataContext="{Binding Groups[1], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}">
                 <!--Double line list no text wrapping-->
-                <ListView
+                <ListView x:ConnectionId='7'
 					ItemsSource="{Binding Items}"
 					IsItemClickEnabled="True"
-					ItemClick="ItemView_ItemClick"
-					Loaded="SecondPivot_Loaded"
+					                              
+					                           
 					ContinuumNavigationTransitionInfo.ExitElementContainer="True">
                     <ListView.ItemTemplate>
                         <DataTemplate/>
@@ -160,11 +160,11 @@
 				DataContext="{Binding SecondGroup}"
 				d:DataContext="{Binding Groups[1], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}">
                 <!--Double line list no text wrapping-->
-                <ListView
+                <ListView x:ConnectionId='6'
 					ItemsSource="{Binding Items}"
 					IsItemClickEnabled="True"
-					ItemClick="ItemView_ItemClick"
-					Loaded="SecondPivot_Loaded"
+					                              
+					                           
 					ContinuumNavigationTransitionInfo.ExitElementContainer="True">
                     <ListView.ItemTemplate>
                         <DataTemplate/>
@@ -180,11 +180,11 @@
 				DataContext="{Binding SecondGroup}"
 				d:DataContext="{Binding Groups[1], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}">
                 <!--Double line list no text wrapping-->
-                <ListView
+                <ListView x:ConnectionId='5'
 					ItemsSource="{Binding Items}"
 					IsItemClickEnabled="True"
-					ItemClick="ItemView_ItemClick"
-					Loaded="SecondPivot_Loaded"
+					                              
+					                           
 					ContinuumNavigationTransitionInfo.ExitElementContainer="True">
                     <ListView.ItemTemplate>
                         <DataTemplate/>
@@ -200,11 +200,11 @@
 				DataContext="{Binding SecondGroup}"
 				d:DataContext="{Binding Groups[1], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}">
                 <!--Double line list no text wrapping-->
-                <ListView
+                <ListView x:ConnectionId='4'
 					ItemsSource="{Binding Items}"
 					IsItemClickEnabled="True"
-					ItemClick="ItemView_ItemClick"
-					Loaded="SecondPivot_Loaded"
+					                              
+					                           
 					ContinuumNavigationTransitionInfo.ExitElementContainer="True">
                     <ListView.ItemTemplate>
                         <DataTemplate/>
@@ -220,11 +220,11 @@
 				DataContext="{Binding SecondGroup}"
 				d:DataContext="{Binding Groups[1], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}">
                 <!--Double line list no text wrapping-->
-                <ListView
+                <ListView x:ConnectionId='3'
 					ItemsSource="{Binding Items}"
 					IsItemClickEnabled="True"
-					ItemClick="ItemView_ItemClick"
-					Loaded="SecondPivot_Loaded"
+					                              
+					                           
 					ContinuumNavigationTransitionInfo.ExitElementContainer="True">
                     <ListView.ItemTemplate>
                         <DataTemplate/>
@@ -240,11 +240,11 @@
 				DataContext="{Binding SecondGroup}"
 				d:DataContext="{Binding Groups[1], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}">
                 <!--Double line list no text wrapping-->
-                <ListView
+                <ListView x:ConnectionId='2'
 					ItemsSource="{Binding Items}"
 					IsItemClickEnabled="True"
-					ItemClick="ItemView_ItemClick"
-					Loaded="SecondPivot_Loaded"
+					                              
+					                           
 					ContinuumNavigationTransitionInfo.ExitElementContainer="True">
                     <ListView.ItemTemplate>
                         <DataTemplate/>
@@ -255,3 +255,4 @@
     </Grid>
 
 </Page>
+

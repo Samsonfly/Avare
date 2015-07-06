@@ -80,9 +80,6 @@
     <ClCompile Include="ItemPage.xaml.cpp" />
     <ClCompile Include="PivotPage.xaml.cpp" />
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="GpsInterface.cpp">
-      <Filter>gps</Filter>
-    </ClCompile>
     <ClCompile Include="GpsParams.cpp">
       <Filter>gps</Filter>
     </ClCompile>

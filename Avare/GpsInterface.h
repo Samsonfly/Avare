@@ -16,8 +16,6 @@ Redistribution and use in source and binary forms, with or without modification,
 
 #pragma once
 
-using namespace Windows::Devices::Geolocation;
-
 ref class GpsInterface sealed
 {
 public:
@@ -29,12 +27,12 @@ public:
 
 	virtual ~GpsInterface();
 
-	virtual	void statusCallback(ref class Geocoordinate sealed) = 0;
+	virtual	void statusCallback(Windows::Devices::Geolocation::Geocoordinate) = 0;
 
-	virtual void locationCallback(ref class Geolocator sealed) = 0;
+	virtual void locationCallback(Windows::Devices::Geolocation::Geolocator) = 0;
 
-	virtual void timeoutCallback(boolean timeout) = 0;
+	virtual void timeoutCallback(bool timeout) = 0;
 
-	virtual void enabledCallback(boolean enabled) = 0;
+	virtual void enabledCallback(bool enabled) = 0;
 
 };
